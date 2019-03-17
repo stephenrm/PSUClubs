@@ -14,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    //Button clubInfoButton = (Button)findViewById(R.id.HackPSU);
-
     public void clubInfo(View v){
         startActivity(new Intent(MainActivity.this, ClubInfo.class));
     }

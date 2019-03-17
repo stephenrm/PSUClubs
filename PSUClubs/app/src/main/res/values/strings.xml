@@ -2,5 +2,5 @@
     <string name="app_name">PSUClubs</string>
     <string name="Title_PSUCLUBS">PSU CLUBS</string>
     <string name="Club_Information">Club Information</string>
-    <string name="Club1">Hack PSU</string>
+    <string name="Club1" translatable="false">Penn State Outing Club</string>
 </resources>
