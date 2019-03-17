@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
         for(int i=0; i < 50; i++) {
             Button newButton = new Button(this);
-            newButton.setText("TEST BUTTON");
+            String temp = Integer.toString(i);
+            newButton.setText(temp);
 
             newButton.setOnClickListener(buttonClick);
             buttonHouse.addView(newButton);
