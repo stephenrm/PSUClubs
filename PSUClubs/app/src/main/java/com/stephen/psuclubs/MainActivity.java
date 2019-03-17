@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0; i < clubsList.size(); i++) {
             Button newButton = new Button(this);
             newButton.setText(((Club)(clubsList.get(i))).getName());
+            newButton.setBackgroundColor(getResources().getColor(R.color.colorAccent));
 
             newButton.setOnClickListener(buttonClick);
             buttonHouse.addView(newButton);
