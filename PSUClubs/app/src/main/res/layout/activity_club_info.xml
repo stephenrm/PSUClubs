@@ -16,7 +16,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:text="@string/Club1"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,6 +54,7 @@
                 android:layout_marginBottom="16dp"
                 android:text="Meeting Location:"
                 android:textSize="24sp"
+                android:textColor="@color/colorPrimary"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="188dp" />
 
@@ -65,6 +66,7 @@
                 android:layout_marginLeft="16dp"
                 android:text="Meeting Location Details"
                 android:textSize="16sp"
+                android:textColor="#000000"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="188dp" />
 
@@ -74,6 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:text="Meeting Times:"
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="188dp" />
@@ -86,6 +89,7 @@
                 android:layout_marginLeft="16dp"
                 android:text="Meeting Time Details"
                 android:textSize="16sp"
+                android:textColor="#000000"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="188dp" />
 
@@ -95,6 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:text="Club Email:"
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="188dp" />
@@ -107,6 +112,7 @@
                 android:layout_marginLeft="16dp"
                 android:text="Email Details"
                 android:textSize="16sp"
+                android:textColor="#000000"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="188dp" />
 
@@ -116,6 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:text="Club Leadership:"
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="188dp" />
@@ -128,6 +135,7 @@
                 android:layout_marginLeft="16dp"
                 android:text="Leadership Details"
                 android:textSize="16sp"
+                android:textColor="#000000"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="188dp" />
 
@@ -137,6 +145,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:text="Club Description:"
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="188dp" />
@@ -148,6 +157,7 @@
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:text="Description Details"
+                android:textColor="#000000"
                 android:textSize="16sp"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="188dp" />
