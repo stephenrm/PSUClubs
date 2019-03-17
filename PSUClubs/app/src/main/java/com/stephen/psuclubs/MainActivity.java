@@ -20,28 +20,32 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        ScrollView scroller = new ScrollView(this);
-//        LinearLayout linLayVar = new LinearLayout(this);
-//
-//        linLayVar.setOrientation(LinearLayout.HORIZONTAL);
-//
-//        scroller.addView(linLayVar);
-//
-//        Button newButt = new Button(this);
-//        newButt.setText("PULLED FROM DATABASE");
-//
-//        LinearLayout.LayoutParams paramsVar = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-//        paramsVar.setMargins(48, 320, 48, 320);
-//        linLayVar.addView(newButt, paramsVar);
-//
-//        this.setContentView(scroller);
+        LinearLayout buttonHouse = (LinearLayout) findViewById(R.id.button_House);
+
+        for(int i=0; i < 50; i++) {
+            Button newButton = new Button(this);
+            newButton.setText("TEST BUTTON");
+
+            newButton.setOnClickListener(buttonClick);
+            buttonHouse.addView(newButton);
+        }
     }
 
-    public void clubInfo(View v){
-        Button bttnclicked = (Button)v;
-        Intent clubStart = new Intent(MainActivity.this, ClubInfo.class);
-        clubStart.putExtra("CLUB INFO TITLE", bttnclicked.getText());
-        startActivity(clubStart);
-    }
+    private View.OnClickListener buttonClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Button bttnclicked = (Button)v;
+            Intent clubStart = new Intent(MainActivity.this, ClubInfo.class);
+            clubStart.putExtra("CLUB INFO TITLE", bttnclicked.getText());
+            startActivity(clubStart);
+        }
+    };
+
+//    public void clubInfo(View v){
+//        Button bttnclicked = (Button)v;
+//        Intent clubStart = new Intent(MainActivity.this, ClubInfo.class);
+//        clubStart.putExtra("CLUB INFO TITLE", bttnclicked.getText());
+//        startActivity(clubStart);
+//    }
 
 }
