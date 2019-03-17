@@ -19,5 +19,10 @@ public class ClubInfo extends AppCompatActivity {
 
         TextView titleDisplay = findViewById(R.id.Club_Information);
         titleDisplay.setText(clubTitle);
+
+//        TextView meetingLocation = findViewById(R.id.meeting_Location);
+//        meetingLocation.setText();
+
+
     }
 }
