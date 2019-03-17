@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:text="@string/Title_PSUCLUBS"
         android:textAllCaps="false"
         android:textColor="@color/colorAccent"
@@ -42,7 +42,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
         android:onClick="clubInfo"
-        android:text="Button"
+        android:text="@string/Club2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Club_Button1" />
 

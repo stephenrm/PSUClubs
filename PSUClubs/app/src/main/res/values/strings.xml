@@ -3,4 +3,5 @@
     <string name="Title_PSUCLUBS">PSU CLUBS</string>
     <string name="Club_Information">Club Information</string>
     <string name="Club1" translatable="false">Penn State Outing Club</string>
+    <string name="Club2">Penn State Robotics Club</string>
 </resources>
