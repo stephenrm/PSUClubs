@@ -25,21 +25,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         //globalFunctions.getList();
 
 
-
-        LinearLayout buttonHouse = (LinearLayout) findViewById(R.id.button_House);
-
-        for(int i=0; i < 50; i++) {
-            Button newButton = new Button(this);
-            String temp = Integer.toString(i);
-            newButton.setText(temp);
-
-            newButton.setOnClickListener(buttonClick);
-            buttonHouse.addView(newButton);
-        }
         MyGlobals globalFunctions = new MyGlobals(this.getApplicationContext());
         globalFunctions.sendList(this);
     }
@@ -47,7 +35,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void receiveClubsList(List clubsList) {
         this.clubsList = clubsList;
+
+        LinearLayout buttonHouse = (LinearLayout) findViewById(R.id.button_House);
+
+        for(int i=0; i < clubsList.size(); i++) {
+            Button newButton = new Button(this);
+            newButton.setText(((Club)(clubsList.get(i))).getName());
+
+            newButton.setOnClickListener(buttonClick);
+            buttonHouse.addView(newButton);
+        }
     }
+
 
     private View.OnClickListener buttonClick = new View.OnClickListener() {
         @Override
