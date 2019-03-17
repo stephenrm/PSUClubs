@@ -30,6 +30,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="16dp"
         android:text="@string/Club1"
+        android:onClick="clubInfo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
