@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:text="@string/Title_PSUCLUBS"
         android:textAllCaps="false"
         android:textColor="@color/colorAccent"
@@ -22,28 +22,61 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/Club_Button1"
-        android:layout_width="320dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
-        android:onClick="clubInfo"
-        android:text="@string/Club1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="8dp"
-        android:onClick="clubInfo"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Club_Button1" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="32dp"
+        android:fillViewport="false"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="97dp">
+
+
+        <LinearLayout
+            android:id="@+id/button_House"
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+            <!--<Button-->
+                <!--android:id="@+id/button8"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="32dp"-->
+                <!--android:layout_marginLeft="32dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:onClick="clubInfo"-->
+                <!--android:text="@string/Club2"-->
+                <!--android:textSize="18sp"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/Club_Button1" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/Club_Button1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="32dp"-->
+                <!--android:layout_marginLeft="32dp"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:onClick="clubInfo"-->
+                <!--android:text="@string/Club1"-->
+                <!--android:textSize="18sp"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/textView4" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
