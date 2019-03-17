@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -13,12 +14,21 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+
+    private List clubsList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        //globalFunctions.getList();
+
+
 
         LinearLayout buttonHouse = (LinearLayout) findViewById(R.id.button_House);
 
@@ -30,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
             newButton.setOnClickListener(buttonClick);
             buttonHouse.addView(newButton);
         }
+        MyGlobals globalFunctions = new MyGlobals(this.getApplicationContext());
+        globalFunctions.sendList(this);
+    }
+
+
+    public void receiveClubsList(List clubsList) {
+        this.clubsList = clubsList;
     }
 
     private View.OnClickListener buttonClick = new View.OnClickListener() {
@@ -48,5 +65,6 @@ public class MainActivity extends AppCompatActivity {
 //        clubStart.putExtra("CLUB INFO TITLE", bttnclicked.getText());
 //        startActivity(clubStart);
 //    }
+
 
 }
