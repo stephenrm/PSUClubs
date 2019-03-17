@@ -16,10 +16,152 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:text="@string/Club1"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Club_Information">
+
+        <LinearLayout
+            android:id="@+id/information_House"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/meeting_Location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Meeting Location:"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimary"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/meeting_Location_Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Meeting Location Details"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/meeting_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Meeting Times:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/meeting_Time_Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Meeting Time Details"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Club Email:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/email_Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Email Details"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/leadership"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Club Leadership:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/leadership_Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Leadership Details"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Club Description:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/description_Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Description Details"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="188dp" />
+        </LinearLayout>
+    </ScrollView>
+
 </android.support.constraint.ConstraintLayout>
