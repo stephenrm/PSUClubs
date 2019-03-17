@@ -59,12 +59,5 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-//    public void clubInfo(View v){
-//        Button bttnclicked = (Button)v;
-//        Intent clubStart = new Intent(MainActivity.this, ClubInfo.class);
-//        clubStart.putExtra("CLUB INFO TITLE", bttnclicked.getText());
-//        startActivity(clubStart);
-//    }
-
 
 }
