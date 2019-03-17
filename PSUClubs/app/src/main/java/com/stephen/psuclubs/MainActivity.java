@@ -2,6 +2,7 @@ package com.stephen.psuclubs;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -41,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0; i < clubsList.size(); i++) {
             Button newButton = new Button(this);
             newButton.setText(((Club)(clubsList.get(i))).getName());
+            //newButton.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+            newButton.getBackground().setColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.MULTIPLY);
 
             newButton.setOnClickListener(buttonClick);
             buttonHouse.addView(newButton);
